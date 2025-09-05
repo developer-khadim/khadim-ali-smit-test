@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taj Restaurant - Booking</title>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h2>🍽️ Welcome to Taj Restaurant 🍽️</h2>
+      <p><b>Where taste meets tradition and every meal tells a story!</b></p>
+    </div>
+    <hr />
+    <nav>
+      <div>
+        <a href="./index.html">🏠 Home</a> |
+        <a href="./booking.html">📅 Booking</a> |
+        <a href="./about.html">ℹ️ About Us</a>
+      </div>
+    </nav>
+  </header>
+  <hr>
+
+  <h3>Book Your Table</h3>
+
+  <form>
+    <h4>Customer Information</h4>
+    <label for="fullname">Full Name: </label>
+    <input type="text" id="fullname" placeholder="Enter your name"><br><br>
+
+    <label for="email">Email Address: </label>
+    <input type="email" id="email" placeholder="example@email.com"><br><br>
+
+    <label for="phone">Phone Number: </label>
+    <input type="tel" id="phone" placeholder="+92-300-1234567"><br><br>
+
+    <h4>Booking Details</h4>
+    <p>Booking Type:</p>
+    <input type="radio" id="table" name="booking">
+    <label for="table">Table Reservation</label><br>
+
+    <input type="radio" id="takeaway" name="booking">
+    <label for="takeaway">Takeaway Order</label><br>
+
+    <input type="radio" id="party" name="booking">
+    <label for="party">Party / Event Booking</label><br><br>
+
+    <label for="datetime">Date and Time: </label>
+    <input type="datetime-local" id="datetime"><br><br>
+
+    <label for="guests">Number of Guests: </label>
+    <input type="number" id="guests" value="2" min="1"><br><br>
+
+    <h4>Food Preferences</h4>
+    <label for="cuisine">Select Cuisine: </label>
+    <select id="cuisine">
+      <option>--Select Cuisine--</option>
+      <option>Sindhi</option>
+      <option>Punjabi</option>
+      <option>Balochi</option>
+      <option>Continental</option>
+    </select><br><br>
+
+    <p>Special Dishes (multiple selection allowed):</p>
+    <input type="checkbox" id="dish1">
+    <label for="dish1">Sindhi Biryani</label><br>
+
+    <input type="checkbox" id="dish2">
+    <label for="dish2">Sindhi Kadhi</label><br>
+
+    <input type="checkbox" id="dish3">
+    <label for="dish3">Dal Pakwan</label><br>
+
+    <input type="checkbox" id="dish4">
+    <label for="dish4">Fried Machli</label><br>
+
+    <input type="checkbox" id="dish5">
+    <label for="dish5">Bughul Gosht</label><br><br>
+
+    <h4>Special Requests</h4>
+    <label for="requests">Write any special instructions: </label><br>
+    <textarea id="requests" rows="4" cols="40" placeholder="E.g. Vegetarian food, less spicy, birthday decoration"></textarea><br><br>
+
+    <h4>Payment Method</h4>
+    <input type="radio" id="cash" name="payment">
+    <label for="cash">Cash on Arrival</label><br>
+
+    <input type="radio" id="card" name="payment">
+    <label for="card">Credit/Debit Card</label><br>
+
+    <input type="radio" id="online" name="payment">
+    <label for="online">Online Payment</label><br><br>
+
+    <button type="submit">Confirm Booking</button>
+    <button type="reset">Clear Form</button>
+  </form>
+
+  <hr>
+  <footer>
+    <p>
+      All Rights are reserved by Taj Restaurant | This site is developed by
+      <a href="#">Khadim Ali --- 465144</a>
+    </p>
+  </footer> 
+</body>
+</html>
